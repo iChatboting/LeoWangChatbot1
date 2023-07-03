@@ -65,6 +65,6 @@ def transcribe(audio):
 #   Gradio output
 
 bot = gr.Interface(fn=transcribe, inputs=gr.Audio(source="microphone", type="filepath"), outputs="audio")
-bot.launch(share=True)
+bot.launch(share=False)
 
-iface.share()
+#iface.share()
